@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3cr-yw-27T">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Bold.ttf">
+            <string>Poppins-Bold</string>
+        </array>
+        <array key="Poppins-SemiBold.ttf">
+            <string>Poppins-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--List Movie View Controller-->
+        <scene sceneID="4BP-sV-kCK">
+            <objects>
+                <viewController storyboardIdentifier="ListMovieViewController" id="3cr-yw-27T" customClass="ListMovieViewController" customModule="AppMovieDB" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kAL-3p-yoL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Movie DB App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZgZ-eK-TsA">
+                                <rect key="frame" x="29" y="50" width="317" height="54"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="WTU-hb-7xp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="36"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find your movies" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VSa-J3-gZw">
+                                <rect key="frame" x="29" y="126" width="317" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="27" id="cVP-mU-xvw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search Here ..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5b9-XS-PLh">
+                                <rect key="frame" x="29" y="171" width="252" height="42"/>
+                                <color key="backgroundColor" red="0.2274509804" green="0.2470588235" blue="0.2784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="mx5-Eq-D3m"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bdN-7y-uib">
+                                <rect key="frame" x="304" y="171" width="42" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="42" id="bFw-uP-Sns"/>
+                                    <constraint firstAttribute="height" constant="42" id="qnu-5f-QBW"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="magnifyingglass" catalog="system"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Categories" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K7H-Gj-Jen">
+                                <rect key="frame" x="29" y="235" width="317" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="27" id="OQM-JM-p0w"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Vej-N1-tv5">
+                                <rect key="frame" x="29" y="280" width="346" height="32"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="Abf-XV-Axz"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="hrH-jE-9dn">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="gy0-NV-Qc2">
+                                <rect key="frame" x="29" y="343" width="317" height="258"/>
+                                <color key="backgroundColor" red="0.14117647058823529" green="0.16470588235294117" blue="0.19607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="258" id="Lcj-YE-hjA"/>
+                                </constraints>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2yg-wb-Y3g">
+                                <rect key="frame" x="29" y="713" width="172" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="27" id="6nQ-8Z-75L"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Load More">
+                                    <fontDescription key="titleFontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="18"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ndQ-VT-IpL">
+                                <rect key="frame" x="212" y="705" width="134" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="Ams-VD-4uo"/>
+                                    <constraint firstAttribute="width" constant="134" id="VNg-gR-7sp"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="watch list"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="rkF-Fh-gdF"/>
+                        <color key="backgroundColor" red="0.14117647059999999" green="0.1647058824" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="K7H-Gj-Jen" firstAttribute="leading" secondItem="rkF-Fh-gdF" secondAttribute="leading" constant="29" id="6TD-0v-uZ9"/>
+                            <constraint firstItem="K7H-Gj-Jen" firstAttribute="top" secondItem="5b9-XS-PLh" secondAttribute="bottom" constant="22" id="7Bi-2P-O6z"/>
+                            <constraint firstItem="rkF-Fh-gdF" firstAttribute="bottom" secondItem="ndQ-VT-IpL" secondAttribute="bottom" constant="31" id="9LR-ZC-kuS"/>
+                            <constraint firstItem="VSa-J3-gZw" firstAttribute="top" secondItem="ZgZ-eK-TsA" secondAttribute="bottom" constant="22" id="BIs-Vo-h1Y"/>
+                            <constraint firstItem="ndQ-VT-IpL" firstAttribute="leading" secondItem="2yg-wb-Y3g" secondAttribute="trailing" constant="11" id="CnS-6R-s4j"/>
+                            <constraint firstItem="Vej-N1-tv5" firstAttribute="leading" secondItem="rkF-Fh-gdF" secondAttribute="leading" constant="29" id="Eib-9j-GRz"/>
+                            <constraint firstItem="2yg-wb-Y3g" firstAttribute="top" secondItem="ndQ-VT-IpL" secondAttribute="bottom" constant="-34" id="Iuc-xc-Acq"/>
+                            <constraint firstItem="rkF-Fh-gdF" firstAttribute="trailing" secondItem="bdN-7y-uib" secondAttribute="trailing" constant="29" id="JZt-a3-pAZ"/>
+                            <constraint firstItem="bdN-7y-uib" firstAttribute="leading" secondItem="5b9-XS-PLh" secondAttribute="trailing" constant="23" id="Ld0-zA-rAP"/>
+                            <constraint firstItem="rkF-Fh-gdF" firstAttribute="trailing" secondItem="K7H-Gj-Jen" secondAttribute="trailing" constant="29" id="NSD-ga-xen"/>
+                            <constraint firstItem="Vej-N1-tv5" firstAttribute="top" secondItem="K7H-Gj-Jen" secondAttribute="bottom" constant="18" id="R9a-rm-ghI"/>
+                            <constraint firstItem="VSa-J3-gZw" firstAttribute="leading" secondItem="rkF-Fh-gdF" secondAttribute="leading" constant="29" id="SYG-pu-s8b"/>
+                            <constraint firstItem="ZgZ-eK-TsA" firstAttribute="top" secondItem="kAL-3p-yoL" secondAttribute="top" constant="50" id="SlV-wF-Z4O"/>
+                            <constraint firstItem="ZgZ-eK-TsA" firstAttribute="leading" secondItem="rkF-Fh-gdF" secondAttribute="leading" constant="29" id="TCr-bs-eBk"/>
+                            <constraint firstItem="rkF-Fh-gdF" firstAttribute="trailing" secondItem="ZgZ-eK-TsA" secondAttribute="trailing" constant="29" id="VGW-HB-FsS"/>
+                            <constraint firstItem="gy0-NV-Qc2" firstAttribute="leading" secondItem="rkF-Fh-gdF" secondAttribute="leading" constant="29" id="Wnh-DH-QSW"/>
+                            <constraint firstItem="bdN-7y-uib" firstAttribute="top" secondItem="VSa-J3-gZw" secondAttribute="bottom" constant="18" id="aA9-fo-5sT"/>
+                            <constraint firstItem="rkF-Fh-gdF" firstAttribute="trailing" secondItem="gy0-NV-Qc2" secondAttribute="trailing" constant="29" id="c9w-GX-8qR"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="2yg-wb-Y3g" secondAttribute="bottom" constant="38" id="elA-as-VXg"/>
+                            <constraint firstItem="rkF-Fh-gdF" firstAttribute="trailing" secondItem="ndQ-VT-IpL" secondAttribute="trailing" constant="29" id="hAn-Y5-Xlh"/>
+                            <constraint firstItem="2yg-wb-Y3g" firstAttribute="leading" secondItem="rkF-Fh-gdF" secondAttribute="leading" constant="29" id="iAI-YC-Rhc"/>
+                            <constraint firstItem="rkF-Fh-gdF" firstAttribute="trailing" secondItem="Vej-N1-tv5" secondAttribute="trailing" id="iRe-Ac-KqV"/>
+                            <constraint firstItem="rkF-Fh-gdF" firstAttribute="trailing" secondItem="VSa-J3-gZw" secondAttribute="trailing" constant="29" id="mZx-xe-Tdz"/>
+                            <constraint firstItem="5b9-XS-PLh" firstAttribute="leading" secondItem="rkF-Fh-gdF" secondAttribute="leading" constant="29" id="qfe-yo-1Sh"/>
+                            <constraint firstItem="gy0-NV-Qc2" firstAttribute="top" secondItem="Vej-N1-tv5" secondAttribute="bottom" constant="31" id="uIl-I7-YZS"/>
+                            <constraint firstItem="5b9-XS-PLh" firstAttribute="top" secondItem="VSa-J3-gZw" secondAttribute="bottom" constant="18" id="xoU-i1-mTe"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="categoryListCollectionView" destination="Vej-N1-tv5" id="Ae7-IL-LDn"/>
+                        <outlet property="listMovieTableView" destination="gy0-NV-Qc2" id="Snx-5z-JFd"/>
+                        <outlet property="loadMoreButton" destination="2yg-wb-Y3g" id="I5m-So-iVg"/>
+                        <outlet property="searchButton" destination="bdN-7y-uib" id="JXb-yD-POs"/>
+                        <outlet property="searchTextField" destination="5b9-XS-PLh" id="wCx-ON-KcQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1AR-sn-kqE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-13.6" y="51.724137931034484"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+        <image name="watch list" width="134" height="42"/>
+    </resources>
+</document>
