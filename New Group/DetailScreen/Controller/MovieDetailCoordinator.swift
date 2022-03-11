@@ -17,15 +17,6 @@ class MovieDetailCoordinator: Coordinator {
         movieDetailVC.viewModel = viewModel
         navigationController?.pushViewController(movieDetailVC, animated: true)
     }
-//    func start() {
-//        guard let listMovieVC = UIStoryboard.init(name: "ListMovieViewController", bundle: nil).instantiateViewController(withIdentifier: "ListMovieViewController") as? ListMovieViewController
-//        else {return}
-//        let viewModel = ListMovieViewModel()
-//        listMovieVC.coordinator = self
-//        listMovieVC.viewModel = viewModel
-//        navigationController?.viewControllers = [listMovieVC]
-//        navigationController?.navigationBar.isHidden = true
-//    }
     
     func finish() {
     }
